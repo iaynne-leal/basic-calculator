@@ -50,8 +50,10 @@ export default function Home() {
     setValue(e?.target?.value)
   }
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Card className="max-w-screen-md w-full flex flex-col justify-center">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-orange-400">
+      
+       <h1 className='font-bold text-center p-4'>Grupo de Samantha y krishna :D</h1>
+      <Card className="max-w-screen-md w-full flex flex-col justify-center bg-orange-200">
         <CardHeader>
           <h1 className='font-bold text-center'>Calculadora</h1>
         </CardHeader>
@@ -64,7 +66,7 @@ export default function Home() {
             <div className='grid grid-cols-3 gap-2 flex-1'>
               {digits.map((n) => {
                 return (
-                  <Button className="h-20 rounded-md px-8 text-xl" onClick={() => handleCLick(n)}>{n}</Button>
+                  <Button className="h-20 rounded-md px-8 text-xl bg-slate-400" onClick={() => handleCLick(n)}>{n}</Button>
                 )
               }).reverse()}
             </div>
